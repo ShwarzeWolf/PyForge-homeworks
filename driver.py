@@ -1,5 +1,5 @@
 
-from solution_script import *
+from scripts.solution_script import *
 
 note = SoundWaveFactory().create_sound_wave('a#2')
 note2 = SoundWaveFactory().create_sound_wave('a#3')

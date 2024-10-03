@@ -296,7 +296,7 @@ class SoundWaveFactory:
             wavfile.write(wav_file_path, SAMPLING_RATE, wave_instance.sound_wave)
             print(f"Saved wave as {wav_file_path}")
 
-        txt_file_path = os.path.join(npy_folder, f"{wave_instance.note_str}.txt")
+        txt_file_path = os.path.join(npy_folder, f"{wave_instance.note_str}.npy")
         np.savetxt(txt_file_path, wave_instance.sound_wave)
         print(f"Saved wave as {txt_file_path}")
 
